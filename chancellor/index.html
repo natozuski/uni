@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About the Chancellor | Physis Pistidos University</title>
+  <style>
+    :root {
+      --bg-light: #fdfdfb;
+      --text-light: #1c1c1c;
+      --bg-dark: #111111;
+      --text-dark: #f4f4f4;
+      --accent: #5a5a5a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      line-height: 1.8;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .chancellor-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .chancellor-photo {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Georgia', serif;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .section {
+      margin-bottom: 3.5rem;
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: 1px solid var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  
+body {
+  transition: opacity 1s ease-in;
+  opacity: 0;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+  <button class="toggle-mode" onclick="document.body.classList.toggle('dark-mode')">
+    Toggle Mode
+  </button>
+  <div class="container">
+    <div class="chancellor-header">
+      <img src="wdf.png" alt="Chancellor Nature YN" class="chancellor-photo" />
+      <div>
+        <h1>Chancellor Nature YN</h1>
+        <h3>Chancellor of Physis Pistidos University<br/>Serving since 2001</h3>
+      </div>
+    </div>
+
+    <div class="section">
+      <p>Since 2001, Chancellor Nature YN has led Physis Pistidos University with vision, resolve, and a deep commitment to intellectual and spiritual integrity. Known for a calm presence and uncompromising focus, Chancellor Nature has guided the university through transformative decades — growing its academic breadth while nurturing a uniquely reflective, student-centered community.</p>
+    </div>
+
+    <div class="section">
+      <h2>Philosophy of Leadership</h2>
+      <p>Chancellor Nature YN leads with a clear conviction: that education is not just about acquiring knowledge, but becoming the kind of person who knows how to use it wisely. His approach to leadership centers on clarity, honesty, and long-term growth — encouraging both students and staff to approach their work with integrity and intention.</p>
+      <p>Under his guidance, Physis Pistidos University has cultivated a culture of depth over speed, reflection over reaction, and substance over spectacle. Chancellor Nature values deliberate thought, personal accountability, and the building of strong, trust-based communities within and beyond the university.</p>
+    </div>
+
+    <div class="section">
+      <h2>Achievements and Legacy</h2>
+      <p>Over the course of more than two decades, Chancellor Nature YN has shaped Physis Pistidos University into a distinctive academic and cultural institution. Under his leadership, the university has expanded its academic offerings, refined its admissions approach, and placed renewed emphasis on the quality of mentorship between faculty and students.</p>
+      <p>He has overseen the development of several interdisciplinary programs, encouraged a slower, more intentional pace of learning, and emphasized a balance between intellectual challenge and emotional clarity. Perhaps most importantly, Chancellor Nature has cultivated an environment where thoughtfulness is rewarded, and where community is built not around perfection, but around trust.</p>
+    </div>
+
+    <div class="section">
+      <h2>A Message to the Students</h2>
+      <p>To the students of Physis Pistidos: this university exists for your growth — not just in knowledge, but in wisdom, strength, and sincerity. Take your time here seriously, but not rigidly. Question what needs questioning. Learn to listen deeply, speak truthfully, and act with intention.</p>
+      <p>You are not here to perform perfection. You are here to become who you are — with courage, with care, and with purpose. My role is to protect the space where that transformation can happen. Yours is to enter it fully.</p>
+    </div>
+  </div>
+
+<script>
+  window.onload = () => {
+    document.body.classList.add('fade-in');
+  };
+</script>
+
+</body>
+</html>
